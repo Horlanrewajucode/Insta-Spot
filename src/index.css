@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgba(252, 245, 229, 1);
+  font-family: "Poppins", sans-serif;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 5px 0;
+}
+.profile-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1.875rem 0 1.25rem;
+  max-width: 95%;
+  margin: 0 auto;
+  border-bottom: 1px solid #21212166;
+
+  & .profile-container-left {
+    display: flex;
+    gap: 30px 40px;
+
+    & .name {
+      max-width: 30ch;
+      display: -webkit-box;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    & .title {
+      max-width: 45ch;
+      display: -webkit-box;
+      line-clamp: 3;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    & .user-details {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    & .edit-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      opacity: 70%;
+      color: #212121;
+      cursor: pointer;
+      transition: 1s ease-in;
+    }
+  }
+
+  & .edit-btn:hover {
+    color: #212121;
+    opacity: 100%;
+  }
+
+  & .new-post-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #212121;
+    font-weight: 600;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s ease-in;
+  }
+
+  & .new-post-btn:hover {
+    opacity: 70%;
+  }
+}
