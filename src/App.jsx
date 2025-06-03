@@ -10,7 +10,7 @@ function App() {
       <Logo />
       <ProfileHeader />
       <ImageList />
-      <Footer/>
+      <Footer />
     </>
   );
 }

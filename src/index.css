@@ -27,26 +27,37 @@ body {
 
   & .profile-container-left {
     display: flex;
-    gap: 30px;
+    gap: 15px;
+    max-height: 10rem;
+
+    & > img {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 0.625rem;
+      object-fit: fill;
+    }
 
     & .name {
       max-width: 35ch;
+      max-height: 80px;
       display: -webkit-box;
       line-clamp: 3;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 3;
       overflow: hidden;
       text-overflow: ellipsis;
-      font-size: 25px;
+      font-size: 18px;
       font-weight: 600;
     }
 
     & .title {
-      max-width: 45ch;
+      max-width: 40ch;
+      max-height: 90px;
       display: -webkit-box;
       line-clamp: 3;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 3;
+      font-size: 15px;
       overflow: hidden;
       text-overflow: ellipsis;
     }
@@ -54,7 +65,10 @@ body {
     & .user-details {
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      align-items: flex-start;
+      gap: 5rem;
+      justify-content: space-between;
+      height: 100px;
     }
 
     & .edit-btn {
@@ -79,7 +93,7 @@ body {
     align-items: center;
     gap: 8px;
     background-color: #212121;
-    font-weight: 600;
+    font-weight: 500;
     color: white;
     padding: 15px 30px;
     border-radius: 10px;
@@ -115,10 +129,10 @@ body {
     padding-top: 1rem;
     justify-content: space-between;
 
-& p{
-    font-size: 18px;
-    font-weight: 500;
-}
+    & p {
+      font-size: 18px;
+      font-weight: 500;
+    }
 
     & button {
       cursor: pointer;
@@ -131,4 +145,69 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
+}
+
+.modal-overlay {
+  position: fixed;
+  background-color: #f8f8f8;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 25rem;
+  width: 100%;
+  padding: 2rem 2rem;
+  z-index: 1;
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.4s ease-in-out;
+
+  & .modal-box {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    & input {
+      background-color: transparent;
+      border: none;
+      outline: 1px solid #f8f8f8;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      border-bottom: 0.2px solid slategray;
+      margin-top: -10px;
+    }
+    & ::placeholder {
+      font-style: italic;
+      font-size: 12px;
+    }
+
+    & input[type="file"] {
+      border: none;
+      border-radius: 0;
+      outline: 0;
+      cursor: pointer;
+    }
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .btn-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    outline: none;
+    cursor: pointer;
+  }
+  .btn-open {
+    background-color: #212121;
+    color: #fcf5e5;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 1s ease-in;
+  }
+  & .btn-open:hover {
+    opacity: 70%;
+  }
 }
