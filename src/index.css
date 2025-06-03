@@ -27,16 +27,18 @@ body {
 
   & .profile-container-left {
     display: flex;
-    gap: 30px 40px;
+    gap: 30px;
 
     & .name {
-      max-width: 30ch;
+      max-width: 35ch;
       display: -webkit-box;
       line-clamp: 3;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 3;
       overflow: hidden;
       text-overflow: ellipsis;
+      font-size: 25px;
+      font-weight: 600;
     }
 
     & .title {
@@ -52,7 +54,7 @@ body {
     & .user-details {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 4px;
     }
 
     & .edit-btn {
@@ -88,4 +90,45 @@ body {
   & .new-post-btn:hover {
     opacity: 70%;
   }
+}
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 1.25rem 2.5rem;
+  width: 100%;
+  border-bottom: 1px solid #21212166;
+
+  & .image {
+    width: 100%;
+    max-height: 26.25rem;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.625rem;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  & .image-title {
+    display: flex;
+    gap: 0.3125rem;
+    padding-top: 1rem;
+    justify-content: space-between;
+
+& p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+    & button {
+      cursor: pointer;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
 }

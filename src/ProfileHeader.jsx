@@ -1,6 +1,6 @@
 function ProfileHeader() {
   return (
-    <div className="profile-container" aria-label="profile banner">
+    <header className="profile-container" aria-label="profile banner">
       <div className="profile-container-left">
         <img src="/images/Avatar.svg" alt="profile image" />
         <div className="user-details">
@@ -28,7 +28,7 @@ function ProfileHeader() {
           New Post
         </button>
       </div>
-    </div>
+    </header>
   );
 }
 
