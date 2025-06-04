@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NewPostModal } from "./NewPostModal";
+import { NewPostModal } from "./newPostModal";
 
 // const photos = [
 //   {
@@ -41,10 +41,9 @@ import { NewPostModal } from "./NewPostModal";
 // ];
 
 function ImageList({ isModalOpen, onCloseModal }) {
-  
-    const handleAddPost = (newPost) => {
+  function handleAddPost(newPost) {
     setPosts((prev) => [newPost, ...prev]);
-  };
+  }
 
   const [posts, setPosts] = useState([
     {

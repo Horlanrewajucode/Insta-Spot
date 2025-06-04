@@ -38,21 +38,23 @@ body {
     }
 
     & .name {
-      max-width: 35ch;
-      max-height: 80px;
+      max-width: 22ch;
+      /* max-height: 80px; */
       display: -webkit-box;
       line-clamp: 3;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 3;
       overflow: hidden;
       text-overflow: ellipsis;
-      font-size: 18px;
+      font-size: 2rem;
       font-weight: 600;
+      line-height: 100%;
     }
 
     & .title {
+        font-size: 1rem;
       max-width: 40ch;
-      max-height: 90px;
+      /* max-height: 90px; */
       display: -webkit-box;
       line-clamp: 3;
       -webkit-box-orient: vertical;
@@ -60,20 +62,23 @@ body {
       font-size: 15px;
       overflow: hidden;
       text-overflow: ellipsis;
+      line-height: 100%;
     }
 
     & .user-details {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      gap: 5rem;
+      /* align-items: flex-start; */
+      /* gap: 5rem; */
       justify-content: space-between;
-      height: 100px;
+      /* gap: 0.5rem; */
+      /* height: 11.875rem; */
     }
 
     & .edit-btn {
       display: flex;
       align-items: center;
+      width: fit-content;
       gap: 8px;
       font-weight: 600;
       opacity: 70%;

@@ -3,8 +3,9 @@ import { useState, useEffect } from "react";
 function ProfileHeader({ onNewPostClick }) {
   const [isOpen, setIsOpen] = useState(false);
   const [profile, setProfile] = useState({
-    name: "Bessie Coleman",
-    title: "Civil Aviator",
+    name: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eum aliquid, commodi, fugiat, ut iste porro at iusto accusantium eius temporibus repellat nam consequatur perferendis cumque recusandae tempore delectus praesentium?",
+    title:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eum aliquid, commodi, fugiat, ut iste porro at iusto accusantium eius temporibus repellat nam consequatur perferendis cumque recusandae tempore delectus praesentium?",
     image: "/images/Avatar.svg",
   });
 

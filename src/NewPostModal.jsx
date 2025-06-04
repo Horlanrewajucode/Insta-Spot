@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 export function NewPostModal({ isOpen, onClose, onAddPost }) {
   const [title, setTitle] = useState("");
