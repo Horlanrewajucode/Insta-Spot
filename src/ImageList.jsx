@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NewPostModal } from "./newPostModal";
+import { NewPostModal } from "./NewPostModal";
 
 // const photos = [
 //   {
