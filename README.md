@@ -1,12 +1,36 @@
-# React + Vite
+# Insta Spot 📸
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Instagram-inspired web app built with **React** where users can edit their profile and share posts with ease. This project demonstrates the use of modals, state management, and basic interactivity such as liking/unliking posts.
 
-Currently, two official plugins are available:
+🔗 **Live Demo**: [insta-spot.vercel.app](https://insta-spot.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Profile Editing**:
+  - Upload a new profile picture
+  - Update your display name
+  - Add a job title
+  - All handled smoothly via a modal interface
+
+- **Create Posts**:
+  - Upload an image and give it a title
+  - Modal interface for adding new posts
+
+- **Post Interactions**:
+  - Like and unlike posts by clicking the heart icon
+
+---
+
+## 🛠️ Tech Stack
+
+- **React** – Frontend framework
+- **VanillaCSS** – For styling and layout
+- **Vite** – Build tool for fast development
+- **Vercel** – Hosting platform
+
+---
+
+### 🖼️Sreenshot
+![Image](./src/Assests/Screenshot%202025-06-04%20110425.png)
