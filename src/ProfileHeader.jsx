@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 
-function ProfileHeader() {
+function ProfileHeader({ onNewPostClick }) {
   const [isOpen, setIsOpen] = useState(false);
   const [profile, setProfile] = useState({
     name: "Bessie Coleman",
     title: "Civil Aviator",
     image: "/images/Avatar.svg",
   });
+
   return (
     <>
       <header className="profile-container" aria-label="profile banner">
@@ -28,7 +29,11 @@ function ProfileHeader() {
           </div>
         </div>
         <div>
-          <button className="new-post-btn" aria-label="new-post-button">
+          <button
+            className="new-post-btn"
+            aria-label="new-post-button"
+            onClick={onNewPostClick}
+          >
             <img src="/images/Group 26.svg" alt="New post button" />
             New Post
           </button>
