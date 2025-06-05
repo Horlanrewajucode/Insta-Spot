@@ -143,6 +143,9 @@ body {
 
     & button {
       cursor: pointer;
+      background-color: transparent;
+      border: none;
+      outline: none;
     }
   }
 }
@@ -252,8 +255,9 @@ body {
     justify-content: center;
     /* padding: 20px 30px; */
   }
+  .image-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
-.image-container {
-  display: flex;
-  flex-direction: column;
-}
+
